@@ -5,7 +5,7 @@ const good = document.querySelector('#good') as HTMLInputElement;
 const cheep = document.querySelector('#cheep') as HTMLInputElement;
 const fast = document.querySelector('#fast') as HTMLInputElement;
 
-function doTheTrick(theClickedOne) {
+function doTheTrick(theClickedOne: EventTarget | null) {
   if (good.checked && cheep.checked && fast.checked) {
     if (good === theClickedOne) {
       fast.checked = false;
